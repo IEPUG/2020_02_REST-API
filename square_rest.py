@@ -33,6 +33,7 @@ class Square2(Resource):
         num = int(args.get('nu m'))
         return {'args_result': num**2}
 
+
 api.add_resource(Index, '/')
 api.add_resource(Square, '/square/<int:num>')
 api.add_resource(Square2, '/square')
