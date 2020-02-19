@@ -30,7 +30,7 @@ class Square2(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('num', type=int, help='Number to square')
         args = parser.parse_args()
-        num = int(args.get('nu m'))
+        num = int(args.get('num'))
         return {'args_result': num**2}
 
 
